@@ -7,14 +7,14 @@ import Link from "next/link";
 
 
 // Images of Projects
-import Quiz_SS from "/public/images/Quiz_SS.png"
-import Meme_ss from "/public/images/Meme_SS.png"
-import eCommerce from "/public/images/E-commerce_ss.png"
-import weather_ss from "/public/images/weather-app-ss.png"
-import github_Search_SS from "/public/images/Github_search_SS.png" 
-import calculaotor_SS from "/public/images/calculaotor_SS.png"
-import Todo_SS from "/public/images/Todo-SS.png"
-import passGen_SS from "/public/images/passGen_ss.png"
+import Quiz_SS from "/images/Quiz_SS.png"
+import Meme_ss from "/images/Meme_SS.png"
+import eCommerce from "/images/E-commerce_ss.png"
+import weather_ss from "/images/weather-app-ss.png"
+import github_Search_SS from "/images/Github_search_SS.png" 
+import calculaotor_SS from "/images/calculaotor_SS.png"
+import Todo_SS from "/images/Todo-SS.png"
+import passGen_SS from "/images/passGen_ss.png"
 
 import { motion } from "framer-motion"
 
@@ -152,8 +152,6 @@ function Page() {
 
 
       </div>
-
-
 
 
     </div>
