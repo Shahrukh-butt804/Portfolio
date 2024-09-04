@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+
+import Nav from "../components/ui/myNavbar"
+
+import  PageTransition  from "../components/ui/pageTransition";
+import StairTransition from "../components/ui/StairTransition";
+
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -15,8 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-black">
+      <body className={inter.className}>
+        <Nav />
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
+        </body>
     </html>
   );
 }
