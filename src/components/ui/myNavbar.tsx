@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import MobileNav from './MobileNav'
 
-function myNavbar() {
+function MyNavbar() {
 
     let links=[
         {
@@ -64,4 +64,4 @@ function myNavbar() {
   )
 }
 
-export default myNavbar
+export default MyNavbar

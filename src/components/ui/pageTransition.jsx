@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-function pageTransition({ children }) {
+function PageTransition({ children }) {
   const pathname = usePathname()
 
   const [show,setShow]=useState(false)
@@ -40,4 +40,4 @@ function pageTransition({ children }) {
 
 
 
-export default pageTransition
+export default PageTransition

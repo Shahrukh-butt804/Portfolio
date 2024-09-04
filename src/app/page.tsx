@@ -87,7 +87,7 @@ export default function Home() {
       <div className="container  flex md:flex-row flex-col justify-evenly items-center flex-wrap md:flex-nowrap  gap-4 lg:gap-20 mt-2 lg:-mt-5">
 
         {status.map((item,index) => (
-          <div className="flex gap-3 items-center">
+          <div key={index} className="flex gap-3 items-center">
           <CountUp className="text-green-400 text-xl md:text-4xl lg:text-6xl font-extrabold" end={item.value} />
             <div>
             <h1 className="text-white font-extrabold text-xl">Total {item.text}</h1>

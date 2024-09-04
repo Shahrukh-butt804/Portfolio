@@ -19,7 +19,7 @@ import passGen_SS from "/public/images/passGen_ss.png"
 import { motion } from "framer-motion"
 
 
-function page() {
+function Page() {
 
   const [projectIndex, setProjectIndex] = useState(0)
 
@@ -160,4 +160,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

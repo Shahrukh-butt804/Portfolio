@@ -12,7 +12,7 @@ import { MdOutgoingMail } from "react-icons/md";
 
 
 
-function page() {
+function Page() {
   let phoneRef = useRef(null);
   const emailRef = useRef(null);
 
@@ -95,4 +95,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
