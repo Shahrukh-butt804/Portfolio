@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import myImage from "@/images/img.jpg"
+import myImage from "../../../public/images/img.jpg"
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
