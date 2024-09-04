@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import myPic from "/public/images/myPic.jpeg"
+import myPic from "/images/myPic.jpeg"
 import { motion } from 'framer-motion';
 
 
