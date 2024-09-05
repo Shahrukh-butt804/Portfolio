@@ -27,7 +27,7 @@ function Page() {
   let projects = [{
     name: "E-commerce",
     description: "I've crafted an e-commerce kind of web app using React and Firebase, featuring robust login/signup functionality for secure authentication. Users can seamlessly buy and sell items of their choice, leveraging a streamlined interface and Firebase's real-time database for smooth transactions. This platform ensures a user-friendly experience tailored for efficient online shopping and selling.",
-    image: "/images/E-commerce_ss.png",
+    image: "/images/E-commerce_SS.png",
     link:"https://e-commerce-6hh2twy3d-shahrukhs-projects-540648f7.vercel.app/"
   },
   {
@@ -45,7 +45,7 @@ function Page() {
   {
     name: "Quiz-app",
     description: "Dive into our dynamic React quiz web app, where I leverage APIs to fetch an array of questions and answers across various categories. Engage in an interactive experience spanning science, history, and more, all tailored to challenge and entertain. Test your knowledge with seamless integration and discover something new in every session ",
-    image: "/images/Quiz_SS.png",
+    image: "/images/Quiz_ss.png",
     link:"https://shahrukh-butt804.github.io/React-Quiz-App/"
   },
   {
