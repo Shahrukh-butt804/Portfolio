@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import myPic from "/images/myPic.jpeg"
+// import myPic from "/public"
 import { motion } from 'framer-motion';
 
 
@@ -20,9 +20,10 @@ const SpinnerImage = () => {
         transition={{ duration:0.6,delay: 0.1, ease:"easeIn"}}
         className='sm:w-[20px] xs:w-[20px] lg:w-[300px]'>
         <Image
-          src={myPic}
+          src="/images/myPic.jpeg"
           alt="Static Image"
           width={230}
+          height={230}
           className="rounded-full"
         />
       </motion.div>
