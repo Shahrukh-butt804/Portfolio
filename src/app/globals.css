@@ -96,3 +96,8 @@
   height: 365px;
   animation: spinHalfClockwiseHalfCounterclockwise 20s linear infinite;
 }
+
+
+.hoverIcons :hover{
+  color: #1a6a37;
+}

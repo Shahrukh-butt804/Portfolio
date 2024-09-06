@@ -18,17 +18,17 @@ export default function Home() {
 
   let status = [
     {
-      text: "Post",
-      value: 30
+      text: "Repos",
+      value: 50
     },
     {
       text: "Commits",
-      value: 100,
+      value: 300,
 
     },
     {
-      text: "Porjects",
-      value: 10
+      text: "Projects",
+      value: 20
     }
   ]
 
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* Image Inside The Spinner */}
-        <div className="container ">
+        <div className="container mt-2 -mb-1">
           <SpinnerImage />
           <div>
           </div>

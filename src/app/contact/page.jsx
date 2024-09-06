@@ -9,14 +9,11 @@ import { MdOutgoingMail } from "react-icons/md";
 
 
 
-
-
-
 function Page() {
   let phoneRef = useRef(null);
   const emailRef = useRef(null);
 
-
+  // Copy to clipboard
   function handleCopy() {
     if (phoneRef.current) {
       // Get the range of the text within the paragraph
@@ -36,58 +33,81 @@ function Page() {
 
 
   }
-  function handleEmail() {
 
+  // Click to mail with Gmail
+  function handleEmail() {
     const mailtoURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailRef.current.innerText)}`
     // Open the mailto URL in a new tab
     window.open(mailtoURL, '_blank');
   }
 
   return (
-    <div className='bg-black h-screen -mt-32 text-white flex gap-5 justify-center items-center flex-col'>
+    <div className='bg-black h-screen -mt-32 text-white flex gap-5 justify-center items-center flex-col' style={{display:"flex",justifyContent:"center",alignItems:"center",height:"500px",paddingLeft:"6px"}}>
 
       {/* Phone */}
-      <div className='flex gap-10 justify-between items-center border border-white  min-w-96 p-3'>
-        <div
-          className='text-green-400 text-2xl ps-2'><FaPhone /></div>
+      <div className='flex justify-center items-center border border-white p-4 rounded-lg' style={{gap:"75px"}}>
+          <div
+          className='text-green-400'
+          style={{fontSize:"24px"}}
+          >
+            <FaPhone />
+          </div>
 
-        <div className='flex justify-start min-w-72 items-start flex-col'>
-          <h2 className='text-xl font-bold text-green-400 my-1'>Phone</h2>
-          <p ref={phoneRef} className='text-xl'>+92-332-3501198</p>
+
+
+        <div className='flex flex-col' style={{position:"relative",right:"37px"}}>
+          <h2 className='text-green-400 text-xl'>Phone</h2>
+          <p ref={phoneRef}>+92-332-3501198</p>
         </div>
+          <div
+             className='text-green-400 hoverIcons'
+             style={{fontSize:"24px"}}
+             onClick={handleCopy}
+             >
+            <FaCopy />
+          </div>
 
-        <div
-          onClick={() => handleCopy()}
-          className='text-green-400 text-2xl hover:text-green-800'><FaCopy /></div>
       </div>
+
 
       {/* Email */}
-      <div className='flex gap-10 justify-between items-center border border-white  min-w-96 p-3'>
-        <div className='text-green-400 text-2xl ps-2'><SiGmail /></div>
+      <div className='flex justify-center items-center border border-white p-4 rounded-lg' style={{gap:"40px"}}>
+          <div
+          className='text-green-400'
+          style={{fontSize:"24px"}}
+          >
+            <SiGmail />
+          </div>
 
-        <div className='flex justify-start min-w-72 items-start flex-col'>
-          <h2 className='text-xl font-bold text-green-400 my-1'>Email</h2>
-          <p  className='text-xl' ref={emailRef}>shahrukhbutt854@gmail.com</p>
+        <div className='flex flex-col'>
+          <h2 className='text-green-400 text-xl'>Email</h2>
+          <p style={{fontSize:"15px"}} ref={emailRef}>shahrukhbutt854@gmail.com</p>
         </div>
-        <div
-          onClick={handleEmail}
-          className='text-green-400 text-2xl hover:text-green-800'><MdOutgoingMail /></div>
+          <div
+             className='text-green-400 hoverIcons'
+             style={{fontSize:"24px"}}
+             onClick={handleEmail}
+             >
+            <MdOutgoingMail />
+          </div>
+
       </div>
 
-      {/* Addres */}
-      <div className='flex gap-10 justify-between items-center border border-white  min-w-96 p-3'>
-        <div className='text-green-400 text-2xl ps-2'><IoLocation /></div>
 
-        <div className='flex justify-start min-w-72 items-start flex-col'>
-          <h2 className='text-xl font-bold text-green-400 my-1'>Address</h2>
-          <p className='text-xl'>Karachi</p>
-        </div>
+        {/* Address */}
+        <div className='flex justify-start items-center  border border-white p-4 rounded-lg' style={{gap:"45px",width:"370px"}}>
+                <div
+                className='text-green-400'
+                style={{fontSize:"24px"}}
+                >
+                  <IoLocation />
+                </div>
 
-        <div
-          className='text-black text-2xl'>
-          <FaCopy /></div>
-      </div>
-
+              <div className='flex flex-col'>
+                <h2 className='text-green-400 text-xl'>Address</h2>
+                <p>Karachi</p>
+              </div>
+            </div>
 
 
 

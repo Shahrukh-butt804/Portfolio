@@ -10,8 +10,8 @@ function StairTransition() {
     const [showDiv, setShowDiv] = useState(true)
 
 
+    // Trigger removal of the div when pathname changes
     useEffect(() => {
-        // Trigger removal of the div when pathname changes
         setShowDiv(true)
         setTimeout(() => {
             setShowDiv(false)

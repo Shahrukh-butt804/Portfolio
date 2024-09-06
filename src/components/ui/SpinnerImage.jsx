@@ -15,9 +15,9 @@ const SpinnerImage = () => {
 
       {/* Static Image */}
       <motion.div
-        initial={{opacity:0,y: 200}}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration:0.6,delay: 0.1, ease:"easeIn"}}
+        initial={{opacity:0,}}
+        animate={{opacity: 1 }}
+        transition={{ duration:1,delay: 0.1, ease:"easeIn"}}
         className='sm:w-[20px] xs:w-[20px] lg:w-[300px]'>
         <Image
           src="/images/myPic.jpeg"
