@@ -95,7 +95,7 @@ export default function Home() {
       </div>
 
       {/* Status With CountUp */}
-      <div className="flex md:flex-row flex-col justify-evenly items-center flex-wrap md:flex-nowrap  gap-4 lg:gap-24 mt-2 lg:-mt-4">
+      <div className="flex md:flex-row flex-col justify-evenly items-center flex-wrap md:flex-nowrap  gap-4 lg:gap-40 mt-2 lg:-mt-4">
         {status.map((item, index) => (
           <div key={index} className="flex gap-3 items-center">
             <CountUp
