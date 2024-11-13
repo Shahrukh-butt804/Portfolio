@@ -40,9 +40,9 @@ export default function Home() {
           <motion.h4
             animate={{ y: 80, opacity: 1 }}
             transition={{ delay: 0.7 }}
-            className="text-white text-5xl opacity-0 mb-20 lg:ms-5 lg:text-8xl font-bold "
+            className="text-white text-5xl opacity-0 mb-20 lg:ms-5 lg:text-[85px] font-bold whitespace-nowrap"
           >
-            FRONTEND
+            MERN-STACK
           </motion.h4>
           <motion.p
             initial={{ x: -100, opacity: 0 }}
@@ -64,7 +64,7 @@ export default function Home() {
             </span>
             . I am a MERN-Stack Developer based in pakistan. I have Developed
             E-commerce, Todos, Quiz And Uber App by using well knowing
-            Technologies React, MngoDb, Express, Node, React-Native, Redux
+            Technologies React, MongoDb, Express, Node, React-Native, Redux
             Toolkit, Javascript, CSS and HTML..
           </motion.h2>
 
