@@ -5,7 +5,6 @@ import Image from 'next/image';
 // import myPic from "/public"
 import { motion } from 'framer-motion';
 
-
 const SpinnerImage = () => {
   return (
     <div className="relative flex justify-center">
