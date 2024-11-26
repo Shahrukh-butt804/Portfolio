@@ -21,7 +21,7 @@ export default function Home() {
     },
     {
       text: "Commits",
-      value: 300,
+      value: 900,
     },
     {
       text: "Projects",
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="bg-black sm:mb-10 lg:mb-0 md:-mt-7 ">
       {/* Hero section */}
-      <div className="container px-3 flex justify-center items-center   flex-col-reverse md:flex-row ">
+      <div className="container px-1  md:px-3 flex justify-center items-center   flex-col-reverse md:flex-row ">
         <div
           className="container mb-4 lg:ms-[-20px] lg:h-[80vh] lg:flex-col lg:items-center lg:justify-center lg:flex-shrink-2
     block lg:flex "
