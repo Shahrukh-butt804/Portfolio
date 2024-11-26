@@ -30,9 +30,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-black sm:mb-10 lg:mb-0 md:-mt-7 ">
+    <div className="bg-black sm:mb-10 overflow-hidden lg:mb-0 md:-mt-7 ">
       {/* Hero section */}
-      <div className="container px-3  flex justify-center items-center flex-col-reverse md:flex-row ">
+      <div className="container px-3   flex justify-center items-center flex-col-reverse md:flex-row ">
         <div
           className="px-3 md:px-0 md:container mb-4 lg:ms-[-20px] lg:h-[80vh] lg:flex-col lg:items-center lg:justify-center lg:flex-shrink-2
     block lg:flex "
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
 
         {/* Image Inside The Spinner */}
-        <div className="container lg:me-[-80px] mt-2 -mb-1 lg:mb-1">
+        <div className="container lg:me-[-80px] mt-2 -mb-1 lg:mb-1 ">
           <SpinnerImage />
           <div></div>
         </div>
